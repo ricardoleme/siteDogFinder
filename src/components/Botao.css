@@ -1,5 +1,5 @@
 :root {
-  --primary: #fff;
+  --corBase: #fff;
 }
 
 .btn {
@@ -11,16 +11,16 @@
 }
 
 .btn-primario {
-  background-color: var(--primary);
+  background-color: var(--corBase);
   color: #242424;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--corBase);
 }
 
 .btn-delineado {
   background-color: transparent;
   color: #fff;
   padding: 8px 20px;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--corBase);
   transition: all 0.3s ease-out;
 }
 

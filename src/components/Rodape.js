@@ -1,6 +1,5 @@
 import React from 'react';
 import './Rodape.css';
-import { Button } from './Botao';
 import { Link } from 'react-router-dom';
 
 function Rodape() {
@@ -22,7 +21,7 @@ function Rodape() {
               type='email'
               placeholder='Informe o seu e-mail'
             />
-            <Button buttonStyle='btn--outline'>Assinar</Button>
+            <button className='btn btn-delineado'>Assinar</button>
           </form>
         </div>
       </section>

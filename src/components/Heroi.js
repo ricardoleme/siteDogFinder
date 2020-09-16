@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import '../App.css';
-import { Button } from './Botao';
 import './Heroi.css';
 
 function Heroi() {
@@ -10,21 +10,20 @@ function Heroi() {
       <h1>DOG FINDER</h1>
       <p>O que você está procurando para o seu cão?</p>
       <div className='hero-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          COMECE AGORA
-        </Button>
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-          onClick={console.log('hey')}
-        >
-          VEJA O COMERCIAL <i className='far fa-play-circle' />
-        </Button>
+      <Link to='/novo' className='btn-mobile'>
+      <button
+        className={'btn btn-delineado btn-grande'}
+      >
+       INICIE AGORA
+      </button>
+    </Link>
+    <Link to='/novo' className='btn-mobile'>
+      <button
+        className={'btn btn-primario btn-grande'}
+      >
+       VEJA O COMERCIAL <i className='far fa-play-circle' />
+      </button>
+    </Link>
       </div>
     </div>
   );
