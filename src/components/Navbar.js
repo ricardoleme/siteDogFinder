@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {ReactComponent as DogWalker} from '../components/icons/walking.svg'
 import './Navbar.css';
+import './Botao.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -70,11 +71,14 @@ function Navbar() {
             </li>
           </ul>
           {exibeBotao && 
+          <Link
+          to='/novo'>
            <button
            className={'btn btn-delineado btn-grande'}
          >
           CADASTRE-SE
          </button>
+         </Link>
          }  
         </div>
       </nav>

@@ -9,7 +9,7 @@
 }
 
 .inicio,
-.services,
+.servicos,
 .produtos,
 .naoEncontrado,
 .novo {
@@ -29,8 +29,8 @@
   font-size: 70px;
 }
 
-.services {
-  background-image: url('/images/img-2.jpg');
+.servicos {
+  background-image: url('/images/img-1.jpg');
   
 }
 
@@ -39,7 +39,7 @@
 }
 
 .novo {
-  background-image: url('/images/img-8.jpg');
+  background-image: url('/images/img-5.jpg');
 }
 
 .naoEncontrado {

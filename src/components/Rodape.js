@@ -1,33 +1,40 @@
 import React from 'react';
 import './Rodape.css';
-import { Link } from 'react-router-dom';
+import './Botao.css';
+import { Link, Redirect } from 'react-router-dom';
 
 function Rodape() {
+
+  function avisaAssinatura() {
+    alert('Assinatura criada com sucesso!')
+    return <Redirect to="/" />
+  }
+
   return (
-    <div className='footer-container'>
-      <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
+    <div className='rodape-container'>
+      <section className='rodape-assinatura'>
+        <p className='rodape-assinatura-cabecalho'>
           Faça parte do clube de clientes da Dog Finder
         </p>
-        <p className='footer-subscription-text'>
+        <p className='rodape-assinatura-texto'>
           Você pode cancelar a sua assinatura a qualquer momento. 
           Detestamos SPAM.
         </p>
         <div className='input-areas'>
-          <form>
+          <form method="get">
             <input
-              className='footer-input'
+              className='rodape-input'
               name='email'
               type='email'
               placeholder='Informe o seu e-mail'
             />
-            <button className='btn btn-delineado'>Assinar</button>
+            <button className='btn btn-delineado btn-medio' onClick={avisaAssinatura}>Assinar</button>
           </form>
         </div>
       </section>
-      <div class='footer-links'>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
+      <div class='rodape-links'>
+        <div className='rodape-link-wrapper'>
+          <div class='rodape-link-items'>
             <h2>Sobre nós</h2>
             <Link to='/nofo'>Como Funciona</Link>
             <Link to='/'>Depoimentos</Link>
@@ -35,7 +42,7 @@ function Rodape() {
             <Link to='/'>Investidores</Link>
             <Link to='/'>Termos do Serviço</Link>
           </div>
-          <div class='footer-link-items'>
+          <div class='rodape-link-items'>
             <h2>Contato</h2>
             <Link to='/'>Fale Conosco</Link>
             <Link to='/'>Suporte</Link>
@@ -46,7 +53,7 @@ function Rodape() {
       </div>
       <section class='social-media'>
         <div class='social-media-wrap'>
-          <div class='footer-logo'>
+          <div class='rodape-logo'>
             <Link to='/' className='social-logo'>         
               Dog Finder &copy; {(new Date().getFullYear())}        
             </Link>

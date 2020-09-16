@@ -10,7 +10,7 @@ function Cartao() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <ItemCartao
-              src='images/img-9.jpg'
+              src='images/img-6.jpg'
               text='Contrate um passeador de cães para o seu melhor amigo'
               label='Dog Walker'
               path='/servicos'
@@ -27,7 +27,7 @@ function Cartao() {
               src='images/img-3.jpg'
               text='Veja locais próximos para deixar o seu pet durante as suas viagens'
               label='Hotel'
-              path='/services'
+              path='/servicos'
             />
             <ItemCartao
               src='images/img-4.jpg'
@@ -36,7 +36,7 @@ function Cartao() {
               path='/produtos'
             />
             <ItemCartao
-              src='images/img-8.jpg'
+              src='images/img-5.jpg'
               text='Ainda não é nosso cliente? Faça o seu cadastro!'
               label='Faça parte!'
               path='/novo'
