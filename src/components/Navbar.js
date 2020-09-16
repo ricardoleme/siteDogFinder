@@ -1,76 +1,81 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import {ReactComponent as DogWalker} from '../components/icons/walking.svg'
 import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+  const [exibeBotao, setExibeBotao] = useState(true);
 
   const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const fechaMobileMenu = () => setClick(false);
 
-  const showButton = () => {
+  const verificaBotao = () => {
     if (window.innerWidth <= 960) {
-      setButton(false);
+      setExibeBotao(false);
     } else {
-      setButton(true);
+      setExibeBotao(true);
     }
   };
 
   useEffect(() => {
-    showButton();
+    verificaBotao();
   }, []);
 
-  window.addEventListener('resize', showButton);
+  window.addEventListener('resize', verificaBotao);
 
   return (
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL
-            <i class='fab fa-typo3' />
+          <Link to='/' className='navbar-logo' onClick={fechaMobileMenu}>
+          <DogWalker  width="50" className='navbar-logo' /> Dog Finder    
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+              <Link to='/' className='nav-links' onClick={fechaMobileMenu}>
+                Início
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/services'
+                to='/servicos'
                 className='nav-links'
-                onClick={closeMobileMenu}
+                onClick={fechaMobileMenu}
               >
-                Services
+                Serviços
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/products'
+                to='/produtos'
                 className='nav-links'
-                onClick={closeMobileMenu}
+                onClick={fechaMobileMenu}
               >
-                Products
+                Produtos
               </Link>
             </li>
 
             <li>
               <Link
-                to='/sign-up'
+                to='/novo'
                 className='nav-links-mobile'
-                onClick={closeMobileMenu}
+                onClick={fechaMobileMenu}
               >
-                Sign Up
+                Cadastre-se
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {exibeBotao && 
+           <button
+           className={'btn btn-delineado btn-grande'}
+         >
+          CADASTRE-SE
+         </button>
+         }  
         </div>
       </nav>
     </>
