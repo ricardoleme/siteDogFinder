@@ -8,14 +8,13 @@ export default function NaoEncontrado() {
       <div className='fundo naoEncontrado'>
         Página não encontrada
         <Link to='/novo' className='btn-mobile'>
-      <button
-        className={'btn btn-delineado btn-grande'}
-      >
-       Voltar na página inicial
-      </button>
-    </Link>
+          <button
+            className={'btn btn-delineado btn-grande'}
+          >
+            Voltar na página inicial
+          </button>
+        </Link>
       </div>
-
     </>
   )
 }

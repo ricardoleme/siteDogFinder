@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom';
 function ItemCartao(props) {
   return (
     <>
-      <li className='cards__item'>
-        <Link className='cards__item__link' to={props.path}>
-          <figure className='cards__item__pic-wrap' data-category={props.label}>
+      <li className='cartao-item'>
+        <Link className='cartao-item-link' to={props.path}>
+          <figure className='cartao-item-pic-wrap' data-category={props.label}>
             <img
-              className='cards__item__img'         
+              className='cartao-item-img'         
               src={props.src}
               alt={props.alt}
             />
           </figure>
-          <div className='cards__item__info'>
-            <h5 className='cards__item__text'>{props.text}</h5>
+          <div className='cartao-item-info'>
+            <h5 className='cartao-item-text'>{props.text}</h5>
           </div>                                                                            
         </Link>
       </li>

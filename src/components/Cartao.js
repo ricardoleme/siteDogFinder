@@ -4,11 +4,11 @@ import ItemCartao from './ItemCartao';
 
 function Cartao() {
   return (
-    <div className='cards'>
+    <div className='cartao'>
       <h1>Confira tudo o que a Dog Finder pode oferecer para você e seu amigo!</h1>
-      <div className='cards__container'>
-        <div className='cards__wrapper'>
-          <ul className='cards__items'>
+      <div className='cartao-container'>
+        <div className='cartao-wrapper'>
+          <ul className='cartao-items'>
             <ItemCartao
               src='images/img-6.jpg'
               text='Contrate um passeador de cães para o seu melhor amigo'
@@ -22,7 +22,7 @@ function Cartao() {
               path='/servicos'
             />
           </ul>
-          <ul className='cards__items'>
+          <ul className='cartao-items'>
             <ItemCartao
               src='images/img-3.jpg'
               text='Veja locais próximos para deixar o seu pet durante as suas viagens'

@@ -21,10 +21,10 @@
 .navbar-logo {
   color: #fff;
   justify-self: start;
-  margin-left: 10px;
+  margin-left: 2px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.7rem;
   display: flex;
   align-items: center;
 }

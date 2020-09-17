@@ -5,11 +5,11 @@ import './Heroi.css';
 
 function Heroi() {
   return (
-    <div className='hero-container'>
+    <div className='heroi-container'>
       <video src='/videos/video-1.mp4' autoPlay loop muted />
       <h1>DOG FINDER</h1>
-      <p>O que você está procurando para o seu cão?</p>
-      <div className='hero-btns'>
+      <p>Procura algo para o seu cão?</p>
+      <div className='heroi-btns'>
       <Link to='/novo' className='btn-mobile'>
       <button
         className={'btn btn-delineado btn-grande'}
