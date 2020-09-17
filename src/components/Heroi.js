@@ -14,7 +14,7 @@ function Heroi() {
       <button
         className={'btn btn-delineado btn-grande'}
       >
-       INICIE AGORA
+       JÁ É USUÁRIO?
       </button>
     </Link>
     <Link to='/novo' className='btn-mobile'>
