@@ -26,12 +26,12 @@
 
 .btn-medio {
   padding: 8px 20px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .btn-grande {
-  padding: 12px 26px;
-  font-size: 20px;
+  padding: 12px 12px;
+  font-size: 18px;
 }
 
 .btn-grande:hover,

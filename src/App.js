@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 import Inicio from './components/pages/Inicio'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Servicos from './components/pages/Servicos';
 import Produtos from './components/pages/Produtos';
 import NovoUsuario from './components/pages/NovoUsuario';
@@ -11,7 +11,7 @@ import NaoEncontrado from './components/pages/NaoEncontrado';
 function App() {
   return (
     <>
-      <Router>
+      <HashRouter basename='/'>
         <Navbar />
         <Switch>
           <Route exact path='/' component={Inicio} />
@@ -20,7 +20,7 @@ function App() {
           <Route exact path='/novo' component={NovoUsuario} />
           <Route component={NaoEncontrado} />
         </Switch>
-      </Router>
+      </HashRouter>
     </>
   );
 }

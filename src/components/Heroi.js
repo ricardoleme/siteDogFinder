@@ -2,11 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import '../App.css';
 import './Heroi.css';
+import videoDog from '../videos/video-1.mp4'
+
 
 function Heroi() {
   return (
     <div className='heroi-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
+      <video src={videoDog} autoPlay loop muted />
       <h1>DOG FINDER</h1>
       <p>Procura algo para o seu cão?</p>
       <div className='heroi-btns'>
