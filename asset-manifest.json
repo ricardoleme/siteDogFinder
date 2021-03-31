@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/siteDogFinder/static/css/main.f634174a.chunk.css",
+    "main.js": "/siteDogFinder/static/js/main.9dc0db5c.chunk.js",
+    "main.js.map": "/siteDogFinder/static/js/main.9dc0db5c.chunk.js.map",
+    "runtime-main.js": "/siteDogFinder/static/js/runtime-main.49e60392.js",
+    "runtime-main.js.map": "/siteDogFinder/static/js/runtime-main.49e60392.js.map",
+    "static/js/2.4d0e679a.chunk.js": "/siteDogFinder/static/js/2.4d0e679a.chunk.js",
+    "static/js/2.4d0e679a.chunk.js.map": "/siteDogFinder/static/js/2.4d0e679a.chunk.js.map",
+    "index.html": "/siteDogFinder/index.html",
+    "static/css/main.f634174a.chunk.css.map": "/siteDogFinder/static/css/main.f634174a.chunk.css.map",
+    "static/js/2.4d0e679a.chunk.js.LICENSE.txt": "/siteDogFinder/static/js/2.4d0e679a.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/siteDogFinder/static/media/img-5.55bb714f.jpg",
+    "static/media/walking.9749f575.svg": "/siteDogFinder/static/media/walking.9749f575.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.49e60392.js",
+    "static/js/2.4d0e679a.chunk.js",
+    "static/css/main.f634174a.chunk.css",
+    "static/js/main.9dc0db5c.chunk.js"
+  ]
+}
