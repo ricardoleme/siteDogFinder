@@ -4,11 +4,20 @@
 
 > Criação de um website inicial responsivo em ReactJS - Projeto App Dog Finder
 
+### Live Demo
+Consulte o [resultado final](http://ricardoleme.github.io/siteDogFinder)
+
 ## Primeiros Passos
 
 - Após clonar o projeto com git clone, acesse a pasta e efetue a instalação das dependências:
 ```sh
 $ npm i 
+```
+## Atualização do package.json
+Caso você esteja baixando esse projeto e o mesmo esteja com algum _package_ desatualizado, atualize-os através do comando:
+```sh
+$ npx npm-check-updates -u
+$ npm i
 ```
 
 
